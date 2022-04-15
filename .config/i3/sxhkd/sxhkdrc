@@ -1,0 +1,136 @@
+super + Escape
+    pkill -USR1 -x sxhkd
+
+super + Return
+    xfce4-terminal
+
+#Rofi & dmenu
+
+super + space
+   	rofi -modi drun -show drun -line padding 4 -hide-scrollbar -show-icons
+
+super + shift + q
+     i3-msg exit
+
+super + r
+   xfce4-terminal -e "ranger"
+   
+super + g
+	google-chrome-stable
+
+super + f
+	thunar
+
+super + e
+	geany
+	
+
+#super + s; {s,b,a,c,r,d,e}
+# {dmsearch,bm.sh,dmconf,clipmenu,rofi-beats, firefox snapdrop.net, rofi -show emoji -modi emoji}
+
+alt + p
+ rofi -show
+
+# Application Keybindings
+
+super + w
+    firefox-esr
+alt + t
+ xfce4-terminal -e "tty-clock"
+
+alt + s
+ todoist
+
+alt + n 
+ discord
+
+ctrl + alt + s
+    flameshot gui
+
+#Audio Keybindings
+
+XF86AudioRaiseVolume
+        amixer -c 1 -- sset Master 2db+
+
+XF86AudioLowerVolume
+        amixer -c 1 -- sset Master 2db-
+
+XF86AudioMute
+        amixer -c 1 -- sset Master toggle
+
+alt + d
+        amixer -c 1 -- sset Master 2db+
+
+alt + a
+        amixer -c 1 -- sset Master 2db-
+
+XF86AudioPlay
+    playerctl play-pause
+
+ctrl + alt + p
+    playerctl play-pause
+
+XF86AudioNext
+    playerctl next
+
+XF86AudioPrev
+    playerctl previous
+
+ctrl + shift + period
+    playerctl next
+
+ctrl + shift + comma
+    playerctl previous
+
+XF86AudioStop
+    playerctl stop
+
+alt + {h,j,k,l}
+   mpc {prev,next,play,pause}
+
+#i3 Specific Keybindings
+
+super + {v,b}
+    i3-msg split {v,h}
+
+super + alt + f
+    i3-msg fullscreen toggle
+
+super + alt + space
+    i3-msg floating toggle
+
+super + control + space
+    i3-msg focus mode_toggle
+
+super + alt + a
+    i3-msg focus parent
+
+#workspaces
+
+super + {1-9,0}
+    i3-msg workspace {1-9,10}
+
+super + alt + {1,2,3,4,5,6,7,8,9}
+    i3-msg workspace {11,12,13,14,15,16,17,18,19}
+
+super + shift+{1-9,0}
+    i3-msg move container to workspace number {1-9,10}
+
+super+alt+shift+{1,2,3,4,5,6,7,8,9}
+    i3-msg move container to workspace number {11,12,13,14,15,16,17,18,19}
+
+
+#other bindings
+
+super + shift + c
+    i3-msg kill
+
+super + alt + c
+    i3-msg reload
+
+super + alt + r
+    i3-msg restart
+
+super + ctrl + {l,j,k,h}
+    i3-msg resize {grow width 1 px or 1 ppt, shrink height 1 px or 1 ppt, grow height 1 px or 1 ppt, shrink width 1 px or 1 ppt}
+
