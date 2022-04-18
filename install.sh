@@ -29,7 +29,7 @@ sudo systemctl enable avahi-daemon
 sudo systemctl enable acpid
 
 # Terminal (eg. terminator)
-sudo apt install -y xfce4-terminal 
+sudo apt install -y kitty
 
 # Python installed for bumblebee-status. Not using polybar.
 sudo apt install -y python3-pip 
@@ -68,8 +68,8 @@ sudo apt install -y meson dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libx
 sudo apt install -y dmenu sxhkd numlockx rofi dunst picom xarchiver whois galculator flameshot geany simple-scan
 
 # Command line text editor -- nano preinstalled  -- I like micro but vim is great
-# sudo apt install -y vim
-sudo apt install -y micro
+sudo apt install -y vim
+# sudo apt install -y micro
 
 # Install fonts
 sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2
