@@ -7,7 +7,7 @@ I used the expert method and the only thing in my:
 
 deb ftp://us.debian.org/debian/ testing main non-free contrib
 
-After doingan update and upgrade,
+After sudo apt update && sudo apt upgrade (takes a while)
 
 sudo apt install git
 
@@ -17,3 +17,7 @@ cd i3gaps-sid
 
 chmod +x install.sh nerdfonts.sh
 ./install.sh
+reboot
+log in using ly log in manager.
+
+**DO NOT USE THE NERDFONTS.SH UNTIL YOU HAVE LOGGED INTO I3. 
