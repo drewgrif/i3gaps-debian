@@ -2,7 +2,7 @@ super + Escape
     pkill -USR1 -x sxhkd
 
 super + Return
-    xfce4-terminal
+    kitty
 
 #Rofi & dmenu
 
@@ -13,7 +13,7 @@ super + shift + q
      i3-msg exit
 
 super + r
-   xfce4-terminal -e "ranger"
+   kitty -e "ranger"
    
 super + g
 	google-chrome-stable
@@ -36,7 +36,7 @@ alt + p
 super + w
     firefox-esr
 alt + t
- xfce4-terminal -e "tty-clock"
+ kitty -e "tty-clock"
 
 alt + s
  todoist
