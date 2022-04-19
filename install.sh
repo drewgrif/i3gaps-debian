@@ -119,6 +119,7 @@ EOF
 sudo cp ./temp /usr/share/xsessions/i3.desktop;rm ./temp
 
 pip install --user bumblebee-status
+pip install --user speedtest-cli
 sudo apt autoremove
 
 printf "\e[1;32mDone! you can now reboot.\e[0m\n"
