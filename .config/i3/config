@@ -161,7 +161,7 @@ client.background       #ffffff
 bar {
         font pango:JetBrainsMono Nerd Font 11
         status_command ~/.local/bin/bumblebee-status \
-			-m kernel publicip date time \
+			-m kernel speedtest date time \
 			-t nord-colorful
 		position top
 		workspace_min_width 28
