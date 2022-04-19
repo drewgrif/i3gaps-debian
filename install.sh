@@ -20,7 +20,7 @@ sudo apt install -y network-manager-gnome
 sudo apt install -y lxappearance 
 
 # File Manager (eg. pcmanfm,krusader)
-sudo apt install -y thunar xfce4-settings
+sudo apt install -y thunar xfce4-settings ranger
 
 # Network File Tools/System Events
 sudo apt install -y dialog mtools dosfstool avahi-daemon acpi acpid gvfs-backends
