@@ -20,7 +20,7 @@ sudo apt install -y network-manager-gnome
 sudo apt install -y lxappearance 
 
 # File Manager (eg. pcmanfm,krusader)
-sudo apt install -y thunar 
+sudo apt install -y thunar xfce4-settings
 
 # Network File Tools/System Events
 sudo apt install -y dialog mtools dosfstool avahi-daemon acpi acpid gvfs-backends
@@ -28,8 +28,8 @@ sudo apt install -y dialog mtools dosfstool avahi-daemon acpi acpid gvfs-backend
 sudo systemctl enable avahi-daemon
 sudo systemctl enable acpid
 
-# Terminal (eg. terminator)
-sudo apt install -y kitty
+# Terminal (eg. terminator,kitty)
+sudo apt install -y xfce4-terminal
 
 # Python installed for bumblebee-status. Not using polybar.
 sudo apt install -y python3-pip 
