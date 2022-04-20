@@ -14,7 +14,7 @@ sudo apt install -y build-essential
 sudo apt install -y intel-microcode 
 
 # Network Manager
-sudo apt install -y network-manager-gnome 
+sudo apt install -y network-manager-gnome gnome-system-monitor
 
 # Installation for Appearance management
 sudo apt install -y lxappearance 
