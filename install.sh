@@ -46,11 +46,11 @@ sudo apt install -y neofetch htop
 sudo apt install -y exa
 
 # Printing and bluetooth (if needed)
-# sudo apt install -y cups
+sudo apt install -y cups
 sudo apt install -y bluez blueman
 
 sudo systemctl enable bluetooth
-# sudo systemctl enable cups
+sudo systemctl enable cups
 
 # Browser Installation (eg. chromium)
 sudo apt install -y firefox-esr 
@@ -62,14 +62,14 @@ sudo apt install -y firefox-esr
 sudo apt install -y nitrogen 
 
 # Required packages for i3-gaps installation
-sudo apt install -y meson dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0 libxcb-shape0-dev mousepad gvfs-backends libpam0g-dev libxcb-xkb-dev
+sudo apt install -y meson dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0 libxcb-shape0-dev i3status libpam0g-dev libxcb-xkb-dev
 
 # Packages needed i3-gaps after installation
-sudo apt install -y dmenu sxhkd numlockx rofi dunst picom xarchiver whois galculator flameshot geany simple-scan
+sudo apt install -y dmenu sxhkd numlockx rofi dunst picom xarchiver galculator flameshot geany simple-scan gvfs-backends
 
 # Command line text editor -- nano preinstalled  -- I like micro but vim is great
-sudo apt install -y vim
-# sudo apt install -y micro
+# sudo apt install -y vim
+sudo apt install -y micro
 
 # Install fonts
 sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2
