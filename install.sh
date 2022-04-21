@@ -122,6 +122,9 @@ sudo cp ./temp /usr/share/xsessions/i3.desktop;rm ./temp
 # https://bumblebee-status.readthedocs.io/en/main/index.html
 pip install --user bumblebee-status
 
+# Package needed for bumblebee-status if using apt module - currently configured is i3gaps config file.
+sudo apt install -y aptitude
+
 sudo apt autoremove
 
 printf "\e[1;32mDone! you can now reboot.\e[0m\n"
