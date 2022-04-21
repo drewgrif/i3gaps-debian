@@ -14,7 +14,7 @@ sudo apt install -y build-essential
 sudo apt install -y intel-microcode 
 
 # Network Manager
-sudo apt install -y network-manager-gnome gnome-system-monitor
+sudo apt install -y network-manager-gnome
 
 # Installation for Appearance management
 sudo apt install -y lxappearance 
@@ -72,7 +72,7 @@ sudo apt install -y dmenu sxhkd numlockx rofi dunst picom xarchiver galculator f
 sudo apt install -y micro
 
 # Install fonts
-sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2
+sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation
 
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
@@ -118,8 +118,10 @@ Type=XSession
 EOF
 sudo cp ./temp /usr/share/xsessions/i3.desktop;rm ./temp
 
+# Using bumblebee-status instead of polybar or i3status (installed for initial login)
+# https://bumblebee-status.readthedocs.io/en/main/index.html
 pip install --user bumblebee-status
-# pip install --user speedtest-cli
+
 sudo apt autoremove
 
 printf "\e[1;32mDone! you can now reboot.\e[0m\n"
