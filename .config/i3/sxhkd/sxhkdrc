@@ -8,6 +8,9 @@ super + Return
 
 super + space
    	rofi -modi drun -show drun -line padding 4 -hide-scrollbar -show-icons
+   	
+super + p
+	dmenu_run
 
 super + shift + q
      i3-msg exit
@@ -25,9 +28,6 @@ super + e
 	geany
 	
 
-#super + s; {s,b,a,c,r,d,e}
-# {dmsearch,bm.sh,dmconf,clipmenu,rofi-beats, firefox snapdrop.net, rofi -show emoji -modi emoji}
-
 alt + p
  rofi -show
 
@@ -35,17 +35,13 @@ alt + p
 
 super + w
     firefox-esr
-alt + t
- xfce4-terminal -e "tty-clock"
 
-alt + s
- todoist
-
-alt + n 
+super + d 
  discord
 
 ctrl + alt + s
     flameshot gui
+
 
 #Audio Keybindings
 
@@ -110,14 +106,22 @@ super + alt + a
 super + {1-9,0}
     i3-msg workspace {1-9,10}
 
-super + alt + {1,2,3,4,5,6,7,8,9}
-    i3-msg workspace {11,12,13,14,15,16,17,18,19}
-
 super + shift+{1-9,0}
     i3-msg move container to workspace number {1-9,10}
+    
+#movement
 
-super+alt+shift+{1,2,3,4,5,6,7,8,9}
-    i3-msg move container to workspace number {11,12,13,14,15,16,17,18,19}
+super+{h,j,k,l}
+    i3-msg focus {left,down,up,right}
+
+super+shift+{h,j,k,l}
+    i3-msg move {left,down,up,right}
+    
+super+{Left,Down,Up,Right}
+    i3-msg focus {left,down,up,right}
+    
+super+shift+{Left,Down,Up,Right}
+    i3-msg move {left,down,up,right}
 
 
 #other bindings
@@ -131,6 +135,6 @@ super + alt + c
 super + alt + r
     i3-msg restart
 
-super + ctrl + {l,j,k,h}
+super + ctrl + {Left,Down,Up,Right}
     i3-msg resize {grow width 1 px or 1 ppt, shrink height 1 px or 1 ppt, grow height 1 px or 1 ppt, shrink width 1 px or 1 ppt}
 
