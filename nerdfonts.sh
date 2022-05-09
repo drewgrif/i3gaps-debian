@@ -1,5 +1,7 @@
 #!/bin/bash
-
+cd
+cd ~/.local/share
+sudo mkdir fonts
 
 cd /tmp
 fonts=( 
