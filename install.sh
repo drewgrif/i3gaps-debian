@@ -126,7 +126,7 @@ pip install --user bumblebee-status
 sudo apt install -y aptitude
 
 # Install Nerd Fonts
-../nerdfonts.sh
+source ~/i3gaps-debian/nerdfonts.sh
 
 sudo apt autoremove
 
