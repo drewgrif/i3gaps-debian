@@ -126,8 +126,6 @@ pip install --user bumblebee-status
 sudo apt install -y aptitude
 
 # Install Nerd Fonts
-cd ~/.local/share
-sudo mkdir fonts
 ../nerdfonts.sh
 
 sudo apt autoremove
