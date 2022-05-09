@@ -125,6 +125,11 @@ pip install --user bumblebee-status
 # Package needed for bumblebee-status if using apt module - currently configured is i3gaps config file.
 sudo apt install -y aptitude
 
+# Install Nerd Fonts
+cd ~/.local/share
+sudo mkdir fonts
+../nerdfonts.sh
+
 sudo apt autoremove
 
 printf "\e[1;32mDone! you can now reboot.\e[0m\n"
