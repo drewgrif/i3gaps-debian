@@ -72,7 +72,7 @@ sudo apt install -y dmenu sxhkd numlockx rofi dunst picom xarchiver galculator f
 sudo apt install -y micro
 
 # Install fonts
-sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation
+sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus
 
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
