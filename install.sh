@@ -6,8 +6,8 @@
 # xorg display server installation
 sudo apt install -y xorg 
 
-# Meta-package  NEEDED
-sudo apt install -y build-essential 
+# Python installed for bumblebee-status. PACKAGE INCLUDES build-essential.
+sudo apt install -y python3-pip 
 
 # Microcode for Intel/AMD 
 # sudo apt install -y amd-microcode
@@ -30,9 +30,6 @@ sudo systemctl enable acpid
 
 # Terminal (eg. terminator,kitty)
 sudo apt install -y xfce4-terminal
-
-# Python installed for bumblebee-status. Not using polybar.
-sudo apt install -y python3-pip 
 
 # Sound packages
 sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa
