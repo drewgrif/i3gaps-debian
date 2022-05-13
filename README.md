@@ -1,5 +1,5 @@
-# i3gaps-sid
-# 4/19/2022 updated/upgraded Debian Testing and gives a status_command process error in bumblebee-status bar.  
+# i3gaps
+# Works great with Debian Stable
 I wanted to install i3 gaps on a debian testing machine.
 My recommendation is to install debian stable minimal (no gui).
 I used the expert method and the only thing in my:
