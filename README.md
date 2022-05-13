@@ -12,7 +12,7 @@ After sudo apt update && sudo apt upgrade (takes a while)
 
 sudo apt install git
 
-git clone https://github.com/drewgrif/i3gaps-sid
+git clone https://github.com/drewgrif/i3gaps-debian
 
 cd i3gaps-sid
 
