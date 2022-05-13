@@ -21,4 +21,3 @@ chmod +x install.sh nerdfonts.sh
 reboot
 log in using ly log in manager.
 
-**DO NOT USE THE NERDFONTS.SH UNTIL YOU HAVE LOGGED INTO I3. 
