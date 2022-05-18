@@ -20,4 +20,5 @@ sudo reboot
 
 log in using ly log in manager.
 
-https://youtu.be/_7p0ExspBmA.  Out of date but still ok.
+https://youtu.be/_7p0ExspBmA.  Out of date.
+
