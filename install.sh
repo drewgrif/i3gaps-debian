@@ -127,4 +127,6 @@ source ~/i3gaps-debian/nerdfonts.sh
 
 sudo apt autoremove
 
+sudo cp -r ./.config/{backgrounds,bumblebee-status,i3,neofetch,rofi}/ ~/.config/
+
 printf "\e[1;32mDone! you can now reboot.\e[0m\n"
