@@ -19,6 +19,7 @@ install Nerd Fonts
 ```
 ./nerdfonts.sh
 ```
+OPTIONAL:
 install customized configuration files (see photo)
 ```
 ./copyconf.sh
