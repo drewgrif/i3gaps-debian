@@ -115,6 +115,10 @@ Type=XSession
 EOF
 sudo cp ./temp /usr/share/xsessions/i3.desktop;rm ./temp
 
+########################################################
+# End of script for default config
+#
+
 # Using bumblebee-status instead of polybar or i3status (installed for initial login)
 # https://bumblebee-status.readthedocs.io/en/main/index.html
 pip install --user bumblebee-status
@@ -127,6 +131,7 @@ source ~/i3gaps-debian/nerdfonts.sh
 
 sudo apt autoremove
 
+# Comment the following line out if you want to use your own config for i3
 sudo cp -r ./.config/{backgrounds,bumblebee-status,i3,neofetch,rofi}/ ~/.config/
 
 printf "\e[1;32mDone! you can now reboot.\e[0m\n"
