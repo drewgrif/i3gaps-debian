@@ -29,7 +29,6 @@ NOT OPTIONAL
 sudo reboot
 ```
 
-log in using ly log in manager.
 
 https://youtu.be/_7p0ExspBmA.  Out of date.
 
