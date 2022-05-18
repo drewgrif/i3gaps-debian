@@ -11,10 +11,20 @@ git clone https://github.com/drewgrif/i3gaps-debian
 
 cd i3gaps-debian
 
-chmod +x install.sh
-
 ./install.sh
+```
 
+OPTIONAL:
+install Nerd Fonts
+```
+./nerdfonts.sh
+```
+install customized configuration files (see photo)
+```
+./copyconf.sh
+```
+NOT OPTIONAL
+```
 sudo reboot
 ```
 

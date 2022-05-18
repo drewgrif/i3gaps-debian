@@ -127,5 +127,6 @@ source ~/i3gaps-debian/nerdfonts.sh
 source ~/i3gaps-debian/copyconf.sh
 
 sudo apt autoremove
-
-printf "\e[1;32mDone! you can now reboot.\e[0m\n"
+printf "\e[1;32mInstall nerdfonts with nerdfonts.sh script.\e[0m\n"
+printf "\e[1;32mInstall my configuration files. Use the copyconf.sh script.\e[0m\n"
+printf "\e[1;32mYou can now reboot if you have considered using two scripts mentioned above.\e[0m\n"
