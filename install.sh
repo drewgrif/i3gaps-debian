@@ -28,8 +28,8 @@ sudo apt install -y dialog mtools dosfstool avahi-daemon acpi acpid gvfs-backend
 sudo systemctl enable avahi-daemon
 sudo systemctl enable acpid
 
-# Terminal (eg. terminator,kitty)
-sudo apt install -y xfce4-terminal
+# Terminal (eg. terminator,kitty,xfce4-terminal)
+sudo apt install -y kitty
 
 # Sound packages
 sudo apt install -y pulseaudio alsa-utils pavucontrol volumeicon-alsa
@@ -119,20 +119,13 @@ sudo cp ./temp /usr/share/xsessions/i3.desktop;rm ./temp
 # End of script for default config
 #
 
-# Using bumblebee-status instead of polybar or i3status (installed for initial login)
-# https://bumblebee-status.readthedocs.io/en/main/index.html
-pip install --user bumblebee-status
-
-# Package needed for bumblebee-status if using apt module - currently configured is i3gaps config file.
-sudo apt install -y aptitude
 
 # Install Nerd Fonts
 source ~/i3gaps-debian/nerdfonts.sh
 
-sudo apt autoremove
+# Install config files for my config
+source ~/i3gaps-debian/copyconf.sh
 
-# Comment the following line out if you want to use your own config for i3
-cp -r .config/{backgrounds,bumblebee-status,i3,neofetch,rofi}/ ~/.config/
-chmod +x ~/.config/i3/autostart.sh
+sudo apt autoremove
 
 printf "\e[1;32mDone! you can now reboot.\e[0m\n"
