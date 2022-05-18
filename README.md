@@ -35,4 +35,4 @@ https://youtu.be/_7p0ExspBmA.  Out of date.
 
 This is the look after using: install.sh, nerdfonts.sh, and copyconf.sh
 
-![Debian with i3gaps](https://raw.githubusercontent.com/drewgrif/blog/main/2022-05-18_17-54.png width=480)
+![Debian with i3gaps](https://raw.githubusercontent.com/drewgrif/blog/main/2022-05-18_17-54.png)
