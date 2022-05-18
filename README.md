@@ -33,3 +33,5 @@ log in using ly log in manager.
 
 https://youtu.be/_7p0ExspBmA.  Out of date.
 
+This is the look after using: install.sh, nerdfonts.sh, and copyconf.sh
+![Debian with i3gaps]](https://github.com/drewgrif/blog/blob/main/2022-05-18_17-54.png)
