@@ -132,7 +132,7 @@ source ~/i3gaps-debian/nerdfonts.sh
 sudo apt autoremove
 
 # Comment the following line out if you want to use your own config for i3
-sudo cp -r ./.config/{backgrounds,bumblebee-status,i3,neofetch,rofi}/ ~/.config/
+sudo cp -r .config/{backgrounds,bumblebee-status,i3,neofetch,rofi}/ ~/.config/
 chmod +x ~/.config/i3/autostart.sh
 
 printf "\e[1;32mDone! you can now reboot.\e[0m\n"
