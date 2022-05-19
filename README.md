@@ -11,7 +11,7 @@ git clone https://github.com/drewgrif/i3gaps-debian
 
 cd i3gaps-debian
 
-./install.sh
+./install.sh (includes nerdfonts.sh and copyconf.sh unless commented)
 ```
 
 OPTIONAL:
