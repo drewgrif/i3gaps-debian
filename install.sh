@@ -119,6 +119,11 @@ sudo cp ./temp /usr/share/xsessions/i3.desktop;rm ./temp
 # End of script for default config
 #
 
+exec ~/i3gaps-debian/nerdfonts.sh
+exec ~/i3gaps-debian/copyconf.sh
+
+
+
 sudo apt autoremove
 printf "\e[1;32mInstall nerdfonts with nerdfonts.sh script.\e[0m\n"
 printf "\e[1;32mInstall my configuration files. Use the copyconf.sh script.\e[0m\n"
