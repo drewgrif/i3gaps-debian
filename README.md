@@ -15,14 +15,14 @@ cd i3gaps-debian
 ```
 
 OPTIONAL:
-install Nerd Fonts
+Nerd Fonts installed by default but can be commented out of install.sh
 ```
-./nerdfonts.sh
+# source ~/i3gaps-debian/nerdfonts.sh
 ```
 OPTIONAL:
-install customized configuration files (see photo)
+Customized configuration installed by default but can be commented out of install.sh
 ```
-./copyconf.sh
+# # source ~/i3gaps-debian/copyconfdfonts.sh
 ```
 NOT OPTIONAL
 ```
