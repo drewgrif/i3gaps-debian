@@ -22,7 +22,7 @@ Nerd Fonts installed by default but can be commented out of install.sh
 OPTIONAL:
 Customized configuration installed by default but can be commented out of install.sh
 ```
-# source ~/i3gaps-debian/copyconfdfonts.sh
+# source ~/i3gaps-debian/copyconf.sh
 ```
 NOT OPTIONAL
 ```
