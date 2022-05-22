@@ -127,4 +127,4 @@ source ~/i3gaps-debian/copyconf.sh
 
 sudo apt autoremove
 
-printf "\e[1;32mYou can now reboot if you have considered using two scripts mentioned above.\e[0m\n"
+printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"

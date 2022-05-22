@@ -29,8 +29,8 @@ NOT OPTIONAL
 sudo reboot
 ```
 
-
-https://youtu.be/_7p0ExspBmA.  Out of date.
+Debian Stable Minimal Install https://www.youtube.com/watch?v=Seqx3Oj5JRE
+How to use this github.com https://www.youtube.com/watch?v=npc4-jp_wvs
 
 ## This is the look after using: install.sh, nerdfonts.sh, and copyconf.sh
 
