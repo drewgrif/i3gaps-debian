@@ -23,7 +23,7 @@ sudo apt install -y lxappearance
 sudo apt install -y thunar xfce4-settings ranger
 
 # Network File Tools/System Events
-sudo apt install -y dialog mtools dosfstool avahi-daemon acpi acpid gvfs-backends
+sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends
 
 sudo systemctl enable avahi-daemon
 sudo systemctl enable acpid
