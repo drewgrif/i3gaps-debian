@@ -64,16 +64,22 @@ sudo apt install -y meson dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libx
 # Packages needed i3-gaps after installation
 sudo apt install -y dmenu sxhkd numlockx rofi dunst libnotify-bin picom unzip geany simple-scan
 
-# curl
-sudo apt install -y curl
-
 # Command line text editor -- nano preinstalled  -- I like micro but vim is great
 # sudo apt install -y micro
+
+############## NVIM
 sudo apt install -y neovim
+
+# curl
+sudo apt install -y curl
 
 # install vimplug
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+# node for nvim is required
+sudo apt install -y nodejs
+###############
 
 # install redshift
 sudo apt install -y redshift
