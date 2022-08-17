@@ -59,7 +59,7 @@ sudo apt install -y firefox-esr
 sudo apt install -y feh
 
 # Required packages for i3-gaps installation
-sudo apt install -y meson dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0 libxcb-shape0-dev i3status libpam0g-dev libxcb-xkb-dev
+sudo apt install -y meson dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0 libxcb-shape0-dev i3status
 
 # Packages needed i3-gaps after installation
 sudo apt install -y dmenu sxhkd numlockx rofi dunst libnotify-bin picom unzip geany simple-scan
@@ -69,7 +69,7 @@ sudo apt install -y dmenu sxhkd numlockx rofi dunst libnotify-bin picom unzip ge
 sudo apt install -y vim
 
 # Install fonts
-sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus
+sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus fonts-cascadia-code
 
 # Create folders in user directory (eg. Documents,Downloads,etc.)
 xdg-user-dirs-update
@@ -83,6 +83,9 @@ mkdir -p build && cd build
 meson --prefix /usr/local
 ninja
 sudo ninja install
+
+# Dependencies for Ly Console Manager
+sudo apt install -y libpam0g-dev libxcb-xkb-dev
 
 # Install Ly Console Display Manager
 cd 
