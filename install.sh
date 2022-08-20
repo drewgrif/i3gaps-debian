@@ -4,20 +4,20 @@
 # Install packages after installing base Debian with no GUI
 
 # xorg display server installation
-sudo apt install -y xorg 
+sudo apt install -y xorg
 
 # Python installed for bumblebee-status. PACKAGE INCLUDES build-essential.
-sudo apt install -y python3-pip 
+sudo apt install -y python3-pip
 
-# Microcode for Intel/AMD 
+# Microcode for Intel/AMD
 # sudo apt install -y amd-microcode
-sudo apt install -y intel-microcode 
+sudo apt install -y intel-microcode
 
 # Network Manager
 sudo apt install -y network-manager-gnome
 
 # Installation for Appearance management
-sudo apt install -y lxappearance 
+sudo apt install -y lxappearance
 
 # File Manager (eg. pcmanfm,krusader)
 sudo apt install -y thunar xfce4-settings ranger
@@ -39,7 +39,7 @@ sudo apt install -y neofetch htop
 
 # EXA installation
 # replace ls command in .bashrc file with line below
-# alias ls='exa -al --long --header --color=always --group-directories-first' 
+# alias ls='exa -al --long --header --color=always --group-directories-first'
 sudo apt install -y exa
 
 # Printing and bluetooth (if needed)
@@ -50,12 +50,12 @@ sudo systemctl enable bluetooth
 sudo systemctl enable cups
 
 # Browser Installation (eg. chromium)
-sudo apt install -y firefox-esr 
+sudo apt install -y firefox-esr
 
-# Desktop background browser/handler 
-# feh --bg-fill /path/to/directory 
+# Desktop background browser/handler
+# feh --bg-fill /path/to/directory
 # example if you want to use in autostart.sh for i3-gaps
-# sudo apt install -y nitrogen 
+# sudo apt install -y nitrogen
 sudo apt install -y feh
 
 # Required packages for i3-gaps installation
@@ -66,7 +66,23 @@ sudo apt install -y dmenu sxhkd numlockx rofi dunst libnotify-bin picom unzip ge
 
 # Command line text editor -- nano preinstalled  -- I like micro but vim is great
 # sudo apt install -y micro
-sudo apt install -y vim
+
+############## NVIM
+sudo apt install -y neovim
+
+# curl
+sudo apt install -y curl
+
+# install vimplug
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+# node for nvim is required
+sudo apt install -y nodejs
+###############
+
+# install redshift
+sudo apt install -y redshift
 
 # Install fonts
 sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus fonts-cascadia-code
@@ -88,7 +104,7 @@ sudo ninja install
 sudo apt install -y libpam0g-dev libxcb-xkb-dev
 
 # Install Ly Console Display Manager
-cd 
+cd
 cd Downloads
 git clone --recurse-submodules https://github.com/nullgemm/ly.git
 cd ly/
@@ -101,13 +117,12 @@ sudo systemctl enable ly
 # sudo apt install -y lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 # sudo systemctl enable lightdm
 
-
 # XSessions and i3.desktop
 if [[ ! -d /usr/share/xsessions ]]; then
     sudo mkdir /usr/share/xsessions
 fi
 
-cat > ./temp << "EOF"
+cat >./temp <<"EOF"
 [Desktop Entry]
 Encoding=UTF-8
 Name=i3
@@ -116,14 +131,15 @@ Exec=i3
 Icon=i3
 Type=XSession
 EOF
-sudo cp ./temp /usr/share/xsessions/i3.desktop;rm ./temp
+sudo cp ./temp /usr/share/xsessions/i3.desktop
+rm ./temp
 
 ########################################################
 # End of script for default config
 #
 
 ## These two scripts will install nerdfonts and copy my configuration files into the ~/.config directory
-## Configuration uses 
+## Configuration uses
 
 source ~/i3gaps-debian/nerdfonts.sh
 source ~/i3gaps-debian/copyconf.sh

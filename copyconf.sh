@@ -11,6 +11,18 @@ sudo apt install -y aptitude
 cd
 cd i3gaps-debian
 
+git clone https://github.com/MarioAvolio/Nvim-Dotfiles.git
+mv Nvim-Dotfiles/ nvim/ # rename
+
+git clone https://github.com/MarioAvolio/Redshift-dotfiles.git
+cd Redshift-dotfiles
+sudo chmod +x install.sh
+./install.sh # TODO: automatic check latidute and longitude!
+
+cd ..
+
+cp -r .config/nvim/ ~/.config
+nvim +PlugInstall
 cp -r .config/backgrounds/ ~/.config
 cp -r .config/bumblebee-status/ ~/.config
 cp -r .config/i3/ ~/.config
