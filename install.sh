@@ -10,7 +10,7 @@ sudo apt install -y xorg
 sudo apt install -y python3-pip 
 
 # Microcode for Intel/AMD 
-# sudo apt install -y amd-microcode
+# sudo apt install -y amd64-microcode
 sudo apt install -y intel-microcode 
 
 # Network Manager
