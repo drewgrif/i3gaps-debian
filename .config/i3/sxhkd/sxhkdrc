@@ -1,5 +1,5 @@
 super + Escape
-    pkill -USR1 -x sxhkd
+    pkill -USR1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
 
 super + Return
    kitty
@@ -126,14 +126,14 @@ super+shift+{Left,Down,Up,Right}
 
 #other bindings
 
-super + shift + c
+super + q
     i3-msg kill
 
 super + alt + c
     i3-msg reload
 
 super + alt + r
-    i3-msg restart
+    i3-msg restart; notify-send 'i3-gaps' 'Restarted'
 
 super + ctrl + {Left,Down,Up,Right}
     i3-msg resize {grow width 1 px or 1 ppt, shrink height 1 px or 1 ppt, grow height 1 px or 1 ppt, shrink width 1 px or 1 ppt}

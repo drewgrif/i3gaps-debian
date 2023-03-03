@@ -4,7 +4,7 @@
 # Install packages after installing base Debian with no GUI
 
 # xorg display server installation
-sudo apt install -y xorg 
+sudo apt install -y xorg xbacklight xbindkeys xvkbd xinput xorg-dev
 
 # Python installed for bumblebee-status. PACKAGE INCLUDES build-essential.
 sudo apt install -y python3-pip 
@@ -20,7 +20,7 @@ sudo apt install -y network-manager-gnome
 sudo apt install -y lxappearance 
 
 # File Manager (eg. pcmanfm,krusader)
-sudo apt install -y thunar xfce4-settings ranger
+sudo apt install -y thunar xfce4-settings xfce4-power-manager xfce4-terminal
 
 # Network File Tools/System Events
 sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backends
@@ -28,7 +28,7 @@ sudo apt install -y dialog mtools dosfstools avahi-daemon acpi acpid gvfs-backen
 sudo systemctl enable avahi-daemon
 sudo systemctl enable acpid
 
-# Terminal (eg. terminator,kitty,xfce4-terminal)
+# Terminal (eg. terminator,kitty,xfce4-terminal,tilix)
 sudo apt install -y kitty
 
 # Sound packages
@@ -65,8 +65,8 @@ sudo apt install -y meson dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libx
 sudo apt install -y dmenu sxhkd numlockx rofi dunst libnotify-bin picom unzip geany simple-scan
 
 # Command line text editor -- nano preinstalled  -- I like micro but vim is great
-# sudo apt install -y micro
-sudo apt install -y vim
+sudo apt install -y micro
+# sudo apt install -y neovim
 
 # Install fonts
 sudo apt install fonts-font-awesome fonts-powerline fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus fonts-cascadia-code
@@ -90,11 +90,11 @@ sudo apt install -y libpam0g-dev libxcb-xkb-dev
 # Install Ly Console Display Manager
 cd 
 cd Downloads
-git clone --recurse-submodules https://github.com/nullgemm/ly.git
+git clone --recurse-submodules https://github.com/fairyglade/ly
 cd ly/
 make
-sudo make install
-sudo systemctl enable ly
+sudo make install installsystemd
+sudo systemctl enable ly.service
 
 # Lightdm can be used instead of Ly (more common)
 # comment out all ly console display if choosing lightdm
