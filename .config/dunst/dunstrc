@@ -1,8 +1,6 @@
 [global]
-    frame_width = 1
-    frame_color = "#788388"
-    
-    font = Noto Sans 10
+   font = Iosevka Term Medium 11
+  
     
     # Allow a small subset of html markup:
     #   <b>bold</b>
@@ -14,7 +12,7 @@
     # <http://developer.gnome.org/pango/stable/PangoMarkupFormat.html>.
     # If markup is not allowed, those tags will be stripped out of the
     # message.
-    markup = yes
+    allow_markup = yes
     
     # The format of the message.  Possible variables are:
     #   %a  appname
@@ -24,7 +22,7 @@
     #   %I  iconname (without its path)
     #   %p  progress value if set ([  0%] to [100%]) or nothing
     # Markup is allowed
-    format = "%s %p\n%b"
+    format = "<b>%s</b>\n%b"
     
     # Sort messages by urgency.
     sort = yes
@@ -40,8 +38,7 @@
     # window allows bounces back and forth.
     # This option conflicts with "word_wrap".
     # Set to 0 to disable.
-    bounce_freq = 5
-
+    bounce_freq = 0
     
     # Show age of message if message is older than show_age_threshold
     # seconds.
@@ -50,7 +47,7 @@
     
     # Split notifications into multiple lines if they don't fit into
     # geometry.
-    word_wrap = no
+    word_wrap = yes
     
     # Ignore newlines '\n' in notifications.
     ignore_newline = no
@@ -68,22 +65,21 @@
     # the top and down respectevly.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "0x4-25+25"
+    geometry = "300x5-30+20"
     
     # Shrink window if it's smaller than the width.  Will be ignored if
     # width is 0.
-    shrink = yes
+    shrink = no
     
     # The transparency of the window.  Range: [0; 100].
     # This option will only work if a compositing windowmanager is
     # present (e.g. xcompmgr, compiz, etc.).
-    transparency = 15
+    transparency = 0
     
     # Don't remove messages, if the user is idle (no mouse or keyboard input)
     # for longer than idle_threshold seconds.
     # Set to 0 to disable.
-    # default 120
-    idle_threshold = 120 
+    idle_threshold = 120
     
     # Which monitor should the notifications be displayed on.
     monitor = 0
@@ -99,7 +95,7 @@
     # 
     # If this option is set to mouse or keyboard, the monitor option
     # will be ignored.
-    follow = mouse
+    #follow = keyboard
     
     # Should a notification popped up from history be sticky or timeout
     # as if it would normally do.
@@ -116,17 +112,16 @@
     # This adds empty space above and under the text.
     line_height = 0
     
-    # Draw a line of "separator_height" pixel height between two
+    # Draw a line of "separatpr_height" pixel height between two
     # notifications.
     # Set to 0 to disable.
-    separator_height = 1
+    separator_height = 2
     
     # Padding between text and separator.
-    # padding = 8
     padding = 8
     
     # Horizontal padding.
-    horizontal_padding = 10
+    horizontal_padding = 16
     
     # Define a color for the separator.
     # possible values are:
@@ -134,7 +129,7 @@
     #  * foreground: use the same color as the foreground;
     #  * frame: use the same color as the frame;
     #  * anything else will be interpreted as a X color.
-    separator_color = #263238
+    separator_color = frame
     
     # Print a notification on startup.
     # This is mainly for error detection, since dbus (re-)starts dunst
@@ -145,54 +140,53 @@
     dmenu = /usr/bin/dmenu -p dunst:
     
     # Browser for opening urls in context menu.
-    browser = palemoon
+    browser = /usr/bin/firefox -new-tab
 
     # Align icons left/right/off
-    icon_position = left
+    icon_position = off
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/
+    icon_folders = /usr/share/icons/Papirus-Dark/16x16/status/:/usr/share/icons/Papirus-Dark/16x16/devices/
 
-    # Limit icons size.
-    max_icon_size=128
+[frame]
+    width = 3
+    color = "#53b1b1"
 
 [shortcuts]
-
     # Shortcuts are specified as [modifier+][modifier+]...key
     # Available modifiers are "ctrl", "mod1" (the alt-key), "mod2",
     # "mod3" and "mod4" (windows-key).
     # Xev might be helpful to find names for keys.
     
     # Close notification.
-    close = mod1+space
+    close = ctrl+space
     
     # Close all notifications.
-    # close_all = ctrl+shift+space
-    close_all = ctrl+mod1+space
-
+    close_all = ctrl+shift+space
+    
     # Redisplay last message(s).
     # On the US keyboard layout "grave" is normally above TAB and left
     # of "1".
-    history = ctrl+mod4+h 
+    history = ctrl+grave
     
     # Context menu.
-    context = ctrl+mod1+c
+    context = ctrl+shift+period
 
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#263238"
-    foreground = "#556064"
-    timeout = 10
+    background = "#11222c"
+    foreground = "#bafdfe"
+    timeout = 4
 
 [urgency_normal]
-    background = "#263238"
-    foreground = "#F9FAF9"
-    timeout = 10
+    background = "#11222c"
+    foreground = "#bafdfe"
+    timeout = 4
 
 [urgency_critical]
-    background = "#D62929"
-    foreground = "#F9FAF9"
+    background = "#ff0000"
+    foreground = "#ffffff"
     timeout = 0
 
 
@@ -247,56 +241,5 @@
 #    appname = Pidgin
 #    summary = *twitter.com*
 #    urgency = normal
-#
-#[Claws Mail]
-#    appname = claws-mail
-#    category = email.arrived
-#    urgency = normal
-#    background = "#2F899E"
-#    foreground = "#FFA247"
-#
-#[mute.sh]
-#     appname = mute
-#     category = mute.sound
-#     script = mute.sh
-#
-#[JDownloader]
-#    appname = JDownloader
-#    category = JD
-#    background = "#FFA247"
-#    foreground = "#FFFFFF"
-#
-#[newsbeuter]
-#    summary = *Feeds*
-#    background = "#A8EB41"
-#    foreground = "#FFFFFF"
-#
-[irc]
-        appname = weechat
-        timeout = 0
-        background = "#0033bb"
-        foreground = "#dddddd"
-#
-[weechat hl]
-     appname = weechat
-     category = weechat.HL
-     background = "#FF5C47"
-     foreground = "#FFFFFF"
-#
-[weechat pn]
-     appname = weechat
-     category = weechat.PM
-     background = "#D53B84"
-     foreground = "#FFFFFF"
-#
-#[CMUS]
-#    appname = CMUS
-#    category = cmus
-#    background = "#6C4AB7"
-#    foreground = "#FFE756"
-#
-#
-#     background = "#30AB70"
-#     foreground = "#F67245"
 #
 # vim: ft=cfg
