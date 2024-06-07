@@ -1,4 +1,9 @@
-# UPDATE: NOT FOR Debian 12 Bookworm
+# This Installation was ONLY INTENDED FOR DEBIAN BULLSEYE (11) 
+
+**RECOMMENDED: USE THE bookworm-scripts for an updated i3 install.**
+
+==============================
+
 Back in November the code for i3gaps and i3wm merged.  The current i3wm on the Debian Bookworm repo is up to date and can be installed MUCH easier.   
 https://packages.debian.org/bookworm/i3-wm
 
